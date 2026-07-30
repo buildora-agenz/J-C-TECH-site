@@ -14,28 +14,35 @@ const Courses = () => {
         <span className="course-num">Path 01</span>
         <h4>Mechanical Design</h4>
         <ul>
-          <li>CATIA</li><li>Creo</li><li>NX</li><li>GD&amp;T</li><li>DFMEA</li><li>DFM</li>
+          <li>CERTIFIED PRODUCT DESIGN</li>
+          <li>MASTERS IN INDUSTRIAL DESIGN</li>
+          <li>MASTERS IN CAD / CAM ENGINEER</li>
+          <li>Reverse engineering / Remastering</li>
         </ul>
       </div>
       <div className="course-card reveal">
         <span className="course-num">Path 02</span>
         <h4>Artificial Intelligence</h4>
         <ul>
-          <li>Python</li><li>Machine Learning</li><li>Deep Learning</li><li>Computer Vision</li><li>LLM</li>
+          <li>Industries required skills</li>
+          <li>Interview preparations</li>
         </ul>
       </div>
       <div className="course-card reveal">
         <span className="course-num">Path 03</span>
         <h4>Electric Vehicle</h4>
         <ul>
-          <li>Battery</li><li>Motor</li><li>BMS</li><li>Charging</li><li>HV Harness</li><li>Safety</li>
+          <li>MASTERS IN AUTOMOTIVE DESIGN</li>
+          <li>CERTIFIED In WIRING HARNESS DESIGN</li>
         </ul>
       </div>
       <div className="course-card reveal">
         <span className="course-num">Path 04</span>
         <h4>Engineering Automation</h4>
         <ul>
-          <li>Python Automation</li><li>Excel Automation</li><li>CAD Automation</li><li>AI Automation</li>
+          <li>CERTIFIED IN CAE</li>
+          <li>CERTIFIED CAM PROGRAMMER</li>
+          <li>MASTERS IN R&D DESIGN</li>
         </ul>
       </div>
     </div>
