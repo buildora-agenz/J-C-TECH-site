@@ -88,8 +88,7 @@ const Consulting = () => {
           ))}
         </div>
         <div className="panel-actions">
-          <button className="btn">Book Consultation</button>
-          <button className="btn btn-outline">Learn More</button>
+          <a href="#contact" className="btn" onClick={() => setActiveService(null)}>Book Consultation</a>
         </div>
       </motion.div>
     );
