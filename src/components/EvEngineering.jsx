@@ -8,7 +8,7 @@ const EvEngineering = () => {
     <div className="ev-wrap">
       <div className="ev-visual reveal">
         <div className="glow"></div>
-        <img src={evImage} alt="EV Engineering" style={{ width: '100%', height: '100%', objectFit: 'contain', position: 'relative', zIndex: 2 }} />
+        <img src={evImage} alt="EV Engineering" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'contain', position: 'relative', zIndex: 2 }} />
       </div>
       <div>
         <div className="section-head reveal">
