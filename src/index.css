@@ -494,12 +494,12 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--navy-900);line-height:1.
 .ev-visual .glow{position:absolute;width:60%;height:60%;border-radius:50%;background:radial-gradient(circle, rgba(255,106,31,.35), transparent 70%);animation:pulse-ring 5s ease-in-out infinite;}
 .ev-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .ev-item{
-  display:flex;align-items:center;gap:14px;padding:18px 20px;background:var(--white);border:1px solid var(--grey-200);border-radius:14px;
-  font-family:var(--font-utility);font-weight:700;font-size:14px;color:var(--navy-800);
+  display:flex;align-items:center;gap:14px;padding:22px 24px;background:var(--white);border:1px solid var(--grey-200);border-radius:14px;
+  font-family:var(--font-utility);font-weight:700;font-size:16px;color:var(--navy-800);
   transition:transform .3s var(--ease), box-shadow .3s;
 }
 .ev-item:hover{transform:translateY(-5px);box-shadow:0 14px 30px -12px rgba(11,30,68,.25);}
-.ev-item .num{font-family:var(--font-utility);font-size:11px;color:var(--orange-500);font-weight:700;}
+.ev-item .num{font-family:var(--font-utility);font-size:13px;color:var(--orange-500);font-weight:700;}
 
 /* ============ CONSULTING ============ */
 #consulting{background:var(--white);padding:120px 0;}

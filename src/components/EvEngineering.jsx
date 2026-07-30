@@ -1,4 +1,5 @@
 import React from 'react';
+import evImage from '../assets/EV.png';
 
 const EvEngineering = () => {
   return (
@@ -7,13 +8,7 @@ const EvEngineering = () => {
     <div className="ev-wrap">
       <div className="ev-visual reveal">
         <div className="glow"></div>
-        <svg viewBox="0 0 200 200" fill="none">
-          <rect x="30" y="80" width="140" height="55" rx="10" stroke="#FF9152" strokeWidth="2.5"/>
-          <circle cx="60" cy="150" r="16" stroke="#FF6A1F" strokeWidth="2.5"/>
-          <circle cx="140" cy="150" r="16" stroke="#FF6A1F" strokeWidth="2.5"/>
-          <path d="M50 80V60a10 10 0 0110-10h80a10 10 0 0110 10v20" stroke="#2A52A0" strokeWidth="2.5"/>
-          <path d="M70 100h20l-8 15h18l-22 25 6-22H70z" fill="#FF6A1F"/>
-        </svg>
+        <img src={evImage} alt="EV Engineering" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'relative', zIndex: 2 }} />
       </div>
       <div>
         <div className="section-head reveal">
