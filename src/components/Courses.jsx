@@ -26,6 +26,7 @@ const Courses = () => {
         <ul>
           <li>INDUSTRIES REQUIRED SKILLS</li>
           <li>INTERVIEW PREPARATIONS</li>
+          <li>PYTHON</li>
         </ul>
       </div>
       <div className="course-card reveal">
@@ -33,7 +34,8 @@ const Courses = () => {
         <h4>Electric Vehicle</h4>
         <ul>
           <li>MASTERS IN AUTOMOTIVE DESIGN</li>
-          <li>CERTIFIED In WIRING HARNESS DESIGN</li>
+          <li>CERTIFIED IN WIRING HARNESS DESIGN</li>
+          <li>BMS</li>
         </ul>
       </div>
       <div className="course-card reveal">
