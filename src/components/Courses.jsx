@@ -17,15 +17,15 @@ const Courses = () => {
           <li>CERTIFIED PRODUCT DESIGN</li>
           <li>MASTERS IN INDUSTRIAL DESIGN</li>
           <li>MASTERS IN CAD / CAM ENGINEER</li>
-          <li>Reverse engineering / Remastering</li>
+          <li>REVERSE ENGINEERING / REMASTERING</li>
         </ul>
       </div>
       <div className="course-card reveal">
         <span className="course-num">Path 02</span>
         <h4>Artificial Intelligence</h4>
         <ul>
-          <li>Industries required skills</li>
-          <li>Interview preparations</li>
+          <li>INDUSTRIES REQUIRED SKILLS</li>
+          <li>INTERVIEW PREPARATIONS</li>
         </ul>
       </div>
       <div className="course-card reveal">
