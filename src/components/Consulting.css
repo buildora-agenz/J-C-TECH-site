@@ -1,0 +1,140 @@
+.service-panel {
+  background: rgba(11, 30, 68, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--orange-500);
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  margin-top: 24px;
+  color: var(--white);
+  text-align: left;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.panel-header h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: var(--grey-300);
+  cursor: pointer;
+  padding: 6px;
+  transition: color 0.3s var(--ease), transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.close-btn:hover {
+  color: var(--orange-500);
+  transform: rotate(90deg);
+  background: rgba(255,255,255,0.05);
+}
+
+.panel-desc {
+  font-size: 15.5px;
+  color: #b0c0e0;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  max-width: 800px;
+}
+
+.panel-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.feature-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--white);
+  background: rgba(255,255,255,0.04);
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.feature-icon {
+  color: var(--orange-500);
+  flex-shrink: 0;
+}
+
+.panel-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.panel-actions .btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--white);
+}
+
+.panel-actions .btn-outline:hover {
+  border-color: var(--orange-500);
+  color: var(--orange-500);
+  background: rgba(255,106,31,0.05);
+}
+
+.desktop-panel-wrapper {
+  display: block;
+}
+
+.mobile-panel-wrapper {
+  grid-column: 1 / -1;
+  display: none;
+  background: transparent;
+  padding: 0 16px 20px 16px;
+}
+
+/* Make active card look distinct */
+.consult-card.active {
+  background: rgba(255, 106, 31, 0.1);
+}
+.consult-card.active h4 {
+  color: var(--orange-500);
+}
+
+@media (max-width: 900px) {
+  .desktop-panel-wrapper {
+    display: none;
+  }
+  .mobile-panel-wrapper {
+    display: block;
+  }
+  .panel-features {
+    grid-template-columns: 1fr;
+  }
+  .service-panel {
+    padding: 24px;
+  }
+  .panel-header h3 {
+    font-size: 22px;
+  }
+  .panel-actions {
+    flex-direction: column;
+  }
+  .panel-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
