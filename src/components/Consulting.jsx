@@ -88,7 +88,15 @@ const Consulting = () => {
           ))}
         </div>
         <div className="panel-actions">
-          <a href="#contact" className="btn" onClick={() => setActiveService(null)}>Book Consultation</a>
+          <button 
+            className="btn" 
+            onClick={() => {
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              setActiveService(null);
+            }}
+          >
+            Book Consultation
+          </button>
         </div>
       </motion.div>
     );
