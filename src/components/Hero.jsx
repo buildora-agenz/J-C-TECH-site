@@ -24,8 +24,7 @@ const Hero = () => {
   <div className="container">
     <div className="hero-content">
       <div className="eyebrow">Engineering Intelligence Company</div>
-      <h1>Engineering the Future <span className="accent">with Intelligence</span></h1>
-      <p className="hero-sub">Learn from Real Industry Experience</p>
+      <h1>Learn from Real <span className="accent">experience</span></h1>
       <p className="hero-desc">JC Tech empowers engineers, students and industries through practical training, AI-driven engineering solutions, EV technologies, CAD expertise and industrial consulting.</p>
       <div className="hero-btns">
         <a href="#courses" className="btn btn-primary">Explore Courses</a>
