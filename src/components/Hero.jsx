@@ -1,8 +1,10 @@
 import React from 'react';
+import FloatingServiceCards from './FloatingServiceCards';
 
 const Hero = () => {
   return (
     <section id="hero">
+      <FloatingServiceCards />
   <div className="hero-grid"></div>
   <div className="hero-orbit-wrap" aria-hidden="true">
     <div className="hero-orbit">
