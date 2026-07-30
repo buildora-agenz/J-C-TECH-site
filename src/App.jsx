@@ -84,9 +84,6 @@ function App() {
   <Hero />
 </ScrollAnimation>
 
-{/*  ============ WHY JC TECH ============  */}
-<Why />
-
 {/*  ============ ABOUT ============  */}
 <About />
 
@@ -122,6 +119,9 @@ function App() {
 
 {/*  ============ FOUNDER ============  */}
 <Founder />
+
+{/*  ============ WHY JC TECH ============  */}
+<Why />
 
 {/*  ============ CONTACT ============  */}
 <Contact />
