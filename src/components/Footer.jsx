@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="tagline">Engineering the Future with Intelligence</div>
         <div className="subtagline">Learn from Real Industry Experience</div>
         <p style={{ marginTop: '1.5rem', color: '#93a2c4', fontSize: '0.9rem', lineHeight: '1.6' }}>
-          <strong>JC TECH</strong><br/>
+          <strong>J C TECH</strong><br/>
           Plot No. 87, AMUDHAM COLONY<br/>
           NANDIVARAM-GUDUVANCHERY -603202<br/>
           CHENGALPET DIST
