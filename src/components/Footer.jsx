@@ -9,6 +9,12 @@ const Footer = () => {
         <div className="footer-brand"><span className="logo-badge"><svg className="logo" role="img" aria-label="JC Tech logo"><use href="#jc-logo"></use></svg></span><span>J C Tech</span></div>
         <div className="tagline">Engineering the Future with Intelligence</div>
         <div className="subtagline">Learn from Real Industry Experience</div>
+        <p style={{ marginTop: '1.5rem', color: '#93a2c4', fontSize: '0.9rem', lineHeight: '1.6' }}>
+          <strong>JC TECH</strong><br/>
+          Plot No. 87, AMUDHAM COLONY<br/>
+          NANDIVARAM-GUDUVANCHERY -603202<br/>
+          CHENGALPET DIST
+        </p>
       </div>
       <div className="footer-col">
         <h5>Company</h5>
@@ -36,7 +42,7 @@ const Footer = () => {
       <div className="socials">
         <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
         <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg></a>
-        <a href="https://wa.me/919940226776" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 5a2 2 0 012-2h3l2 5-2.5 1.5a11 11 0 005 5L14 12l5 2v3a2 2 0 01-2 2A16 16 0 013 5z"/></svg></a>
+        <a href="https://wa.me/919500647222" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 5a2 2 0 012-2h3l2 5-2.5 1.5a11 11 0 005 5L14 12l5 2v3a2 2 0 01-2 2A16 16 0 013 5z"/></svg></a>
       </div>
     </div>
   </div>
