@@ -87,17 +87,7 @@ const Consulting = () => {
             </div>
           ))}
         </div>
-        <div className="panel-actions">
-          <button 
-            className="btn" 
-            onClick={() => {
-              window.location.href = '#contact';
-              setActiveService(null);
-            }}
-          >
-            Book Consultation
-          </button>
-        </div>
+
       </motion.div>
     );
   };
