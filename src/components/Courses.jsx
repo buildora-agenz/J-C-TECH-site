@@ -27,6 +27,7 @@ const Courses = () => {
           <li>INDUSTRIES REQUIRED SKILLS</li>
           <li>INTERVIEW PREPARATIONS</li>
           <li>PYTHON</li>
+          <li>MACHINE LEARNING</li>
         </ul>
       </div>
       <div className="course-card reveal">
