@@ -91,7 +91,7 @@ const Consulting = () => {
           <button 
             className="btn" 
             onClick={() => {
-              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              window.location.href = '#contact';
               setActiveService(null);
             }}
           >
