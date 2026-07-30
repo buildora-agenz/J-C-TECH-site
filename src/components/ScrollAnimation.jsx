@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 const ScrollAnimation = ({ children }) => {
   const canvasRef = useRef(null);
@@ -152,27 +153,41 @@ const ScrollAnimation = ({ children }) => {
             pointerEvents: 'none',
             willChange: 'opacity, transform'
           }}>
-          <h2 style={{ color: '#fff', fontSize: 'clamp(2rem, 5vw, 4rem)', fontWeight: 'bold', margin: 0, letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+          <motion.h2 
+            initial={{ opacity: 0, y: 30, filter: 'blur(10px)' }}
+            animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            style={{ color: '#fff', fontSize: 'clamp(3rem, 7vw, 5.5rem)', fontWeight: '900', margin: 0, letterSpacing: '-0.02em', lineHeight: 1.1, textTransform: 'uppercase', background: 'linear-gradient(to right, #ffffff, #93a2c4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textShadow: 'none' }}>
             Welcome to J C Tech
-          </h2>
-          <p style={{ color: '#FF6A1F', fontSize: 'clamp(1rem, 2vw, 1.5rem)', margin: 0, maxWidth: '600px', alignSelf: 'center', fontWeight: '500' }}>
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+            style={{ color: '#FF6A1F', fontSize: 'clamp(1.2rem, 2.5vw, 1.8rem)', margin: 0, maxWidth: '800px', alignSelf: 'center', fontWeight: '500', letterSpacing: '2px', textTransform: 'uppercase' }}>
             Where Engineering Intelligence Meets Industry
-          </p>
-          <div style={{ 
-            marginTop: '32px', 
-            opacity: 0.9, 
+          </motion.p>
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 0.9, scale: 1 }}
+            transition={{ duration: 1, delay: 1.2, ease: "easeOut" }}
+            style={{ 
+            marginTop: '40px', 
             fontSize: '0.85rem', 
             textTransform: 'uppercase', 
             letterSpacing: '3px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: '8px',
+            gap: '12px',
             color: '#fff'
           }}>
             Scroll to begin
-            <div style={{ width: '2px', height: '40px', background: 'linear-gradient(to bottom, #fff, transparent)' }} />
-          </div>
+            <motion.div 
+              animate={{ height: ['0px', '50px', '50px', '0px'], opacity: [0, 1, 1, 0], y: [0, 0, 10, 10] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              style={{ width: '2px', background: 'linear-gradient(to bottom, #FF6A1F, transparent)' }} />
+          </motion.div>
         </div>
         
         {/* Render the Hero section on top, dynamically fading in at the end */}
