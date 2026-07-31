@@ -2,15 +2,15 @@ import React from 'react';
 
 const KnowledgeHub = () => {
   return (
-    <section id="hub">
-  <div className="container">
-    <div className="hub-banner reveal" style={{ 
-      backgroundImage: 'linear-gradient(rgba(1, 15, 36, 0.7), rgba(1, 15, 36, 0.8)), url(/hub.jpg)',
+    <section id="hub" style={{ 
+      backgroundImage: 'linear-gradient(rgba(1, 15, 36, 0.85), rgba(1, 15, 36, 0.95)), url(/hub.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      border: '1px solid rgba(255,255,255,0.1)'
+      backgroundAttachment: 'fixed',
+      backgroundRepeat: 'no-repeat'
     }}>
+  <div className="container">
+    <div className="hub-banner reveal">
       <div>
         <h3>The JC Tech Knowledge Hub</h3>
         <p>Free resources built for engineers, not just students — because we're not just a course-selling website.</p>
