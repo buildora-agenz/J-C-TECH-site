@@ -158,7 +158,7 @@ const ScrollAnimation = ({ children }) => {
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{ duration: 1.2, ease: "easeOut" }}
             style={{ color: '#fff', fontSize: 'clamp(3rem, 7vw, 5.5rem)', fontWeight: '900', margin: 0, letterSpacing: '-0.02em', lineHeight: 1.1, textTransform: 'uppercase', background: 'linear-gradient(to right, #ffffff, #93a2c4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textShadow: 'none' }}>
-            Welcome to J C Tech
+            Welcome to JC Tech
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

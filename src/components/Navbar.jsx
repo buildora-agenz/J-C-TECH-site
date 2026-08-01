@@ -8,7 +8,7 @@ const Navbar = () => {
     <a href="#hero" className="nav-brand">
       <span className="logo-badge"><svg className="logo" role="img" aria-label="JC Tech logo"><use href="#jc-logo"></use></svg></span>
       <div>
-        <span>J C Tech</span>
+        <span>JC Tech</span>
         <small>ENGINEERING INTELLIGENCE</small>
       </div>
     </a>

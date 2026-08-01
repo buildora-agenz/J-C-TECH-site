@@ -869,21 +869,13 @@ textarea:focus-visible, select:focus-visible{
 .logo-badge{
   position:relative; display:flex; align-items:center; justify-content:center;
   border-radius:50%; flex-shrink:0;
-  background:radial-gradient(circle at 50% 40%, #FFFFFF 0%, #F5F7FB 60%, #E7ECF6 100%);
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,.5),
-    0 2px 6px rgba(4,11,26,.4),
-    0 0 16px 2px rgba(255,122,47,.38);
-  transition:box-shadow .4s var(--ease);
+  background:transparent;
 }
 .logo-badge .logo{ position:relative; z-index:1; }
 .nav-brand .logo-badge{width:46px;height:46px;}
 .footer-brand .logo-badge{width:44px;height:44px;}
 #navbar:hover .nav-brand .logo-badge{
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,.6),
-    0 2px 8px rgba(4,11,26,.45),
-    0 0 22px 4px rgba(255,122,47,.55);
+  /* Removed hover shadow */
 }
 @media(max-width:640px){
   .nav-brand .logo-badge{width:40px;height:40px;}
