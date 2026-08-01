@@ -5,7 +5,7 @@ const Why = () => {
     <section id="why">
   <div className="container">
     <div className="section-head center reveal">
-      <div className="eyebrow" style={{ color: 'var(--orange-500)', fontWeight: 900, fontSize: '2rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Why JC TECH?</div>
+      <div className="eyebrow" style={{ color: '#FF4500', fontWeight: 900, fontSize: '2rem', textTransform: 'uppercase', letterSpacing: '2px', textShadow: '0 0 10px rgba(255, 69, 0, 0.6)' }}>Why JC TECH?</div>
       <h2>Engineered for Your Success</h2>
       <p style={{ color: 'var(--grey-600)', fontWeight: 'bold' }}>We bridge the gap between academic theory and industrial reality. Here is how we build the next generation of engineers.</p>
     </div>
