@@ -1,6 +1,6 @@
 .bc-wrapper {
   position: absolute;
-  right: 4%;
+  right: 1.5%;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -80,13 +80,13 @@
 
 @media (max-width: 1280px) {
   .bc-wrapper {
-    right: 2%;
+    right: 1%;
   }
 }
 
 @media (max-width: 1024px) {
   .bc-wrapper {
-    right: 1%;
+    right: 0.5%;
     gap: 16px;
   }
   .bc-card {
