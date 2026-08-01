@@ -332,11 +332,11 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--navy-900);line-height:1.
   background-size:64px 64px;
   mask-image:radial-gradient(ellipse 70% 60% at 30% 40%, black 20%, transparent 75%);
 }
-.hero-content{position:relative;z-index:2;max-width:860px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center;}
+.hero-content{position:relative;z-index:2;width:100%;max-width:860px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center;padding:0 24px;}
 .hero-content .eyebrow{color:var(--orange-400);}
 .hero-content .eyebrow::before{background:var(--orange-400);}
 #hero h1{
-  font-size:clamp(38px,5.4vw,66px);
+  font-size:clamp(32px,4.5vw,66px);
   font-weight:800;color:var(--white);
   margin-bottom:22px;
 }
@@ -702,6 +702,19 @@ footer .subtagline{color:#7C8BAF;font-size:13px;margin-top:6px;}
 .socials svg{width:16px;height:16px;stroke:var(--white);}
 
 /* ============ RESPONSIVE ============ */
+@media(max-width:1440px){
+  .hero-content{max-width:700px;}
+}
+@media(max-width:1280px){
+  .hero-content{max-width:580px;}
+}
+@media(max-width:1100px){
+  .hero-content{max-width:480px;}
+}
+@media(max-width:900px){
+  /* Side cards are hidden at 900px, so hero content can expand again */
+  .hero-content{max-width:860px;}
+}
 @media(max-width:1080px){
   .why-grid{grid-template-columns:1fr 1fr;}
   .course-grid{grid-template-columns:1fr 1fr;}
