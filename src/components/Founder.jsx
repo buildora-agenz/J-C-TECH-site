@@ -5,8 +5,8 @@ const Founder = () => {
     <section id="founder">
   <div className="container">
     <div className="founder-wrap" style={{ alignItems: 'stretch' }}>
-      <div>
-        <div className="founder-photo reveal" style={{ top: '120px', position: 'sticky' }}>
+      <div className="founder-photo-wrapper">
+        <div className="founder-photo reveal">
           <span className="initials">GC</span>
         </div>
       </div>

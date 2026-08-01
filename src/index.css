@@ -627,6 +627,7 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--navy-900);line-height:1.
 /* ============ FOUNDER ============ */
 #founder{background:var(--white);padding:120px 0;}
 .founder-wrap{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:center;}
+.founder-photo-wrapper { position: sticky; top: 120px; }
 .founder-photo{
   aspect-ratio:4/5;border-radius:26px;
   background:linear-gradient(160deg,var(--navy-800),var(--navy-950));
@@ -707,6 +708,7 @@ footer .subtagline{color:#7C8BAF;font-size:13px;margin-top:6px;}
   .ai-grid{grid-template-columns:1fr 1fr;}
   .consult-grid{grid-template-columns:1fr 1fr;}
   .about-wrap, .ev-wrap, .founder-wrap, .contact-wrap{grid-template-columns:1fr;gap:40px;}
+  .founder-photo-wrapper { position: relative; top: auto; }
   .hub-grid{grid-template-columns:repeat(3,1fr);}
   .blog-grid, .test-grid{grid-template-columns:1fr 1fr;}
   .footer-top{grid-template-columns:1fr 1fr;}
