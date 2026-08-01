@@ -48,7 +48,7 @@ const Hero = () => {
           >
             <div className="eyebrow">Engineering Intelligence Company</div>
             <h1>Learn from Real <span className="accent">experience</span></h1>
-            <p className="hero-desc">
+            <p className="hero-desc" style={{ textAlign: 'left', margin: '0 auto 40px auto' }}>
               JC Tech empowers engineers, students and industries through practical training, AI-driven engineering solutions, EV technologies, CAD expertise and industrial consulting.
             </p>
           </motion.div>
