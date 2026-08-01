@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer-top">
       <div>
         <div className="footer-brand"><span className="logo-badge"><svg className="logo" role="img" aria-label="JC Tech logo"><use href="#jc-logo"></use></svg></span><span>JC Tech</span></div>
-        <div className="tagline">Engineering the Future with Intelligence</div>
+
         <div className="subtagline">Learn from Real Industry Experience</div>
         <p style={{ marginTop: '1.5rem', color: '#93a2c4', fontSize: '0.9rem', lineHeight: '1.6' }}>
           <strong>JC TECH</strong><br/>
