@@ -58,6 +58,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+            style={{ marginTop: '120px' }}
           >
             <a href="#courses" className="btn btn-primary">Explore Courses</a>
             <a href="#contact" className="btn btn-ghost">Book Free Consultation</a>
