@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import FloatingServiceCards from './FloatingServiceCards';
+import HeroBusinessCards from './HeroBusinessCards';
 
 const Hero = () => {
   return (
@@ -37,6 +38,7 @@ const Hero = () => {
       }} />
 
       <FloatingServiceCards />
+      <HeroBusinessCards />
 
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <div className="hero-content">

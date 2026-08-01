@@ -1,0 +1,103 @@
+.bc-wrapper {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  z-index: 10;
+  perspective: 1000px;
+}
+
+.bc-card {
+  background: rgba(20, 28, 45, 0.82);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: max-content;
+  box-shadow: 0 10px 30px rgba(4, 11, 26, 0.4), 0 0 12px rgba(255, 122, 48, 0.1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.bc-card:hover {
+  background: rgba(25, 34, 55, 0.88);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 40px rgba(4, 11, 26, 0.5), 0 0 20px rgba(255, 122, 48, 0.2);
+}
+
+.bc-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(4, 11, 26, 0.5);
+  padding: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(255, 122, 48, 0.15);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.bc-card:hover .bc-icon {
+  box-shadow: 0 0 15px rgba(255, 122, 48, 0.3);
+  transform: rotate(5deg);
+}
+
+.bc-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bc-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+.bc-subtitle {
+  font-family: var(--font-utility);
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #ff9d58;
+}
+
+@media (max-width: 1280px) {
+  .bc-wrapper {
+    right: 2%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bc-wrapper {
+    right: 1%;
+    gap: 16px;
+  }
+  .bc-card {
+    padding: 18px;
+    gap: 12px;
+  }
+  .bc-title {
+    font-size: 14px;
+  }
+  .bc-subtitle {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 900px) {
+  .bc-wrapper {
+    display: none;
+  }
+}
