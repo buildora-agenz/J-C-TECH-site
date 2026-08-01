@@ -38,8 +38,8 @@ const Hero = () => {
 
       <FloatingServiceCards />
 
-      <div className="container" style={{ position: 'relative', zIndex: 2, marginTop: '80px' }}>
-        <div className="hero-content" style={{ maxWidth: '850px', textAlign: 'left', margin: 0, alignItems: 'flex-start' }}>
+      <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+        <div className="hero-content">
           
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -54,10 +54,10 @@ const Hero = () => {
           </motion.div>
           
           <motion.div
+            className="hero-btns"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
-            style={{ marginTop: '40px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'flex-start' }}
           >
             <a href="#courses" className="btn btn-primary">Explore Courses</a>
             <a href="#contact" className="btn btn-ghost">Book Free Consultation</a>
@@ -65,7 +65,6 @@ const Hero = () => {
 
           <motion.div 
             className="hero-stats" 
-            style={{ justifyContent: 'flex-start', marginTop: '60px' }}
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
