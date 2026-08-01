@@ -5,51 +5,57 @@
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   gap: 20px;
   z-index: 10;
   perspective: 1000px;
 }
 
 .bc-card {
-  background: rgba(20, 28, 45, 0.82);
+  background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 22px;
-  padding: 24px;
+  border-radius: 18px;
+  padding: 16px 20px;
   display: flex;
   align-items: center;
   gap: 16px;
   width: max-content;
-  box-shadow: 0 10px 30px rgba(4, 11, 26, 0.4), 0 0 12px rgba(255, 122, 48, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: border-color 0.25s ease, background 0.25s ease;
+  transform-style: preserve-3d;
+  margin-left: auto;
 }
 
-.bc-card:hover {
-  background: rgba(25, 34, 55, 0.88);
-  border-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 12px 40px rgba(4, 11, 26, 0.5), 0 0 20px rgba(255, 122, 48, 0.2);
+.bc-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(255,106,31,0.12) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.bc-card:hover::before {
+  opacity: 1;
 }
 
 .bc-icon {
+  color: var(--orange-400);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(4, 11, 26, 0.5);
-  padding: 12px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 10px rgba(255, 122, 48, 0.15);
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-}
-
-.bc-card:hover .bc-icon {
-  box-shadow: 0 0 15px rgba(255, 122, 48, 0.3);
-  transform: rotate(5deg);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .bc-content {
@@ -62,15 +68,14 @@
   font-family: var(--font-display);
   font-size: 16px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   letter-spacing: 0.02em;
 }
 
 .bc-subtitle {
   font-family: var(--font-utility);
   font-size: 12.5px;
-  font-weight: 500;
-  color: #ff9d58;
+  color: var(--orange-400);
 }
 
 @media (max-width: 1280px) {
@@ -85,7 +90,7 @@
     gap: 16px;
   }
   .bc-card {
-    padding: 18px;
+    padding: 12px 16px;
     gap: 12px;
   }
   .bc-title {
