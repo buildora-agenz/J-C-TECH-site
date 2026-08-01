@@ -49,7 +49,7 @@ const Hero = () => {
           >
             <div className="eyebrow">Engineering Intelligence Company</div>
             <h1 style={{ margin: '16px 0' }}>Learn from Real <span className="accent">experience</span></h1>
-            <p className="hero-desc" style={{ textAlign: 'center', margin: '0 auto 32px auto', maxWidth: '700px' }}>
+            <p className="hero-desc" style={{ textAlign: 'center', margin: '0 auto 32px auto', maxWidth: '800px', fontSize: '1.25rem', lineHeight: 1.6 }}>
               JC Tech empowers engineers, students and industries through practical training, AI-driven engineering solutions, EV technologies, CAD expertise and industrial consulting.
             </p>
             
@@ -64,7 +64,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
-            style={{ marginTop: '15vh' }}
+            style={{ marginTop: '22vh' }}
           >
             <div className="hero-stat"><b>22+</b><span>Years Industry Experience</span></div>
             <div className="hero-stat"><b>CAD · AI · EV</b><span>Integrated Curriculum</span></div>
