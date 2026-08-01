@@ -7,7 +7,7 @@ const Courses = () => {
     <div className="section-head reveal">
       <div className="eyebrow">Courses, Organized by Career Path</div>
       <h2>Choose Where You Want to Go — We'll Build the Path</h2>
-      <p>Instead of a list of software names, we organize learning by the career you're building toward.</p>
+      <p style={{ color: 'var(--navy-800)' }}>Instead of a list of software names, we organize learning by the career you're building toward.</p>
     </div>
     <div className="course-grid stagger">
       <div className="course-card reveal">
