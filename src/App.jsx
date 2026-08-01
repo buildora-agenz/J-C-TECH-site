@@ -4,8 +4,8 @@ import SvgSymbols from './components/SvgSymbols';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
-import ScrollAnimation from './components/ScrollAnimation';
 import Hero from './components/Hero';
+import { motion } from 'framer-motion';
 import Why from './components/Why';
 import About from './components/About';
 import Courses from './components/Courses';
@@ -79,19 +79,23 @@ function App() {
 <Navbar />
 
 <main id="main">
-{/*  ============ SCROLL ANIMATION & HERO ============  */}
-<ScrollAnimation>
-  <Hero />
-</ScrollAnimation>
+{/*  ============ HERO ============  */}
+<Hero />
 
 {/*  ============ ABOUT ============  */}
+<motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ once: true, margin: "-50px" }}>
 <About />
+</motion.div>
 
 {/*  ============ COURSES ============  */}
+<motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ once: true, margin: "-50px" }}>
 <Courses />
+</motion.div>
 
 {/*  ============ AI SOLUTIONS ============  */}
+<motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ once: true, margin: "-50px" }}>
 <AiSolutions />
+</motion.div>
 
 {/*  ============ EV ENGINEERING ============  */}
 <EvEngineering />

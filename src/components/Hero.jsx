@@ -1,46 +1,105 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import FloatingServiceCards from './FloatingServiceCards';
 
 const Hero = () => {
   return (
-    <section id="hero">
+    <section id="hero" style={{ position: 'relative', overflow: 'hidden', minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
+      
+      {/* Background Video */}
+      <video 
+        src="/jc-animation.mp4" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          zIndex: 0,
+          opacity: 0.7
+        }}
+      />
+      
+      {/* Gradient overlay to ensure text is readable against the video */}
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        background: 'linear-gradient(to right, rgba(4,11,26,0.95) 0%, rgba(4,11,26,0.5) 50%, rgba(4,11,26,0.2) 100%)',
+        zIndex: 1
+      }} />
+
       <FloatingServiceCards />
-  <div className="hero-grid"></div>
-  <div className="hero-orbit-wrap" aria-hidden="true">
-    <div className="hero-orbit">
-      <svg viewBox="0 0 900 900">
-        <g className="g-rays" stroke="#2A52A0" opacity="0.55"><line className="ray" x1="450" y1="60" x2="450" y2="220" strokeWidth="10"/><line className="ray" x1="450" y1="680" x2="450" y2="840" strokeWidth="10"/><line className="ray" x1="60" y1="450" x2="220" y2="450" strokeWidth="10"/><line className="ray" x1="680" y1="450" x2="840" y2="450" strokeWidth="10"/><line className="ray" x1="171" y1="171" x2="280" y2="280" strokeWidth="10"/><line className="ray" x1="620" y1="620" x2="729" y2="729" strokeWidth="10"/><line className="ray" x1="729" y1="171" x2="620" y2="280" strokeWidth="10"/><line className="ray" x1="280" y1="620" x2="171" y2="729" strokeWidth="10"/></g>
-        <circle className="ring g-ring-1" cx="450" cy="450" r="220" stroke="#FF6A1F" opacity="0.5"/>
-        <circle className="ring g-ring-2" cx="450" cy="450" r="170" stroke="#FF9152" opacity="0.4"/>
-        <circle className="ring" cx="450" cy="450" r="120" stroke="#2A52A0" opacity="0.6"/>
-      </svg>
-    </div>
-  </div>
-  <div className="hero-visual" aria-hidden="true">
-    <div className="hero-logo-float">
-      <div className="hero-logo-rotate">
-        <svg className="logo" aria-hidden="true" focusable="false"><use href="#jc-logo"></use></svg>
+
+      <div className="container" style={{ position: 'relative', zIndex: 2, marginTop: '80px' }}>
+        <div className="hero-content" style={{ maxWidth: '850px', textAlign: 'left', margin: 0, alignItems: 'flex-start' }}>
+          
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            <h2 style={{ 
+              color: '#fff', 
+              fontSize: 'clamp(3rem, 7vw, 5.5rem)', 
+              fontWeight: '900', 
+              margin: 0, 
+              letterSpacing: '-0.02em', 
+              lineHeight: 1.1, 
+              textTransform: 'uppercase', 
+              background: 'linear-gradient(to right, #ffffff, #93a2c4)', 
+              WebkitBackgroundClip: 'text', 
+              WebkitTextFillColor: 'transparent', 
+              textShadow: 'none' 
+            }}>
+              WELCOME TO JC TECH
+            </h2>
+            <p style={{ 
+              color: 'var(--orange-500)', 
+              fontSize: 'clamp(1.2rem, 2.5vw, 1.8rem)', 
+              marginTop: '16px', 
+              fontWeight: '600', 
+              letterSpacing: '2px', 
+              textTransform: 'uppercase' 
+            }}>
+              Where Engineering Intelligence Meets Industry
+            </p>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+            style={{ marginTop: '40px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'flex-start' }}
+          >
+            <a href="#courses" className="btn btn-primary">Explore Courses</a>
+            <a href="#contact" className="btn btn-ghost">Book Free Consultation</a>
+          </motion.div>
+
+          <motion.div 
+            className="hero-stats" 
+            style={{ justifyContent: 'flex-start', marginTop: '60px' }}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
+          >
+            <div className="hero-stat"><b>22+</b><span>Years Industry Experience</span></div>
+            <div className="hero-stat"><b>CAD · AI · EV</b><span>Integrated Curriculum</span></div>
+            <div className="hero-stat"><b>100%</b><span>Project-Based Learning</span></div>
+          </motion.div>
+
+        </div>
       </div>
-    </div>
-  </div>
-  <div className="container">
-    <div className="hero-content">
-      <div className="eyebrow">Engineering Intelligence Company</div>
-      <h1>Learn from Real <span className="accent">experience</span></h1>
-      <p className="hero-desc">JC Tech empowers engineers, students and industries through practical training, AI-driven engineering solutions, EV technologies, CAD expertise and industrial consulting.</p>
-      <div className="hero-btns">
-        <a href="#courses" className="btn btn-primary">Explore Courses</a>
-        <a href="#contact" className="btn btn-ghost">Book Free Consultation</a>
-      </div>
-      <div className="hero-stats">
-        <div className="hero-stat"><b>22+</b><span>Years Industry Experience</span></div>
-        <div className="hero-stat"><b>CAD · AI · EV</b><span>Integrated Curriculum</span></div>
-        <div className="hero-stat"><b>100%</b><span>Project-Based Learning</span></div>
-      </div>
-    </div>
-  </div>
-  <div className="scroll-cue"><span>Scroll</span><div className="line"></div></div>
-</section>
+      
+      <div className="scroll-cue" style={{ zIndex: 2 }}><span>Scroll</span><div className="line"></div></div>
+    </section>
   );
 };
 
