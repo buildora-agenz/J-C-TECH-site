@@ -2,13 +2,7 @@ import React from 'react';
 
 const KnowledgeHub = () => {
   return (
-    <section id="hub" style={{ 
-      backgroundImage: 'linear-gradient(rgba(1, 15, 36, 0.85), rgba(1, 15, 36, 0.95)), url(/hub.jpg)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed',
-      backgroundRepeat: 'no-repeat'
-    }}>
+    <section id="hub">
   <div className="container">
     <div className="hub-banner reveal">
       <div>
