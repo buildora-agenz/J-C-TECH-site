@@ -69,7 +69,7 @@ const Hero = () => {
               letterSpacing: '2px', 
               textTransform: 'uppercase' 
             }}>
-              Where Engineering Intelligence Meets Industry
+              Learn from real industry experience
             </p>
           </motion.div>
           
