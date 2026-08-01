@@ -4,9 +4,13 @@ const Founder = () => {
   return (
     <section id="founder">
   <div className="container">
-    <div className="founder-wrap">
-      <div className="founder-photo reveal" style={{ alignSelf: 'flex-start', top: '100px', position: 'sticky' }}><span className="initials">GC</span></div>
-      <div className="reveal">
+    <div className="founder-wrap" style={{ alignItems: 'stretch' }}>
+      <div>
+        <div className="founder-photo reveal" style={{ top: '120px', position: 'sticky' }}>
+          <span className="initials">GC</span>
+        </div>
+      </div>
+      <div className="reveal" style={{ alignSelf: 'center' }}>
         <div className="eyebrow">Founder's Message</div>
         <h2 style={{ color: 'var(--navy-900)', marginBottom: '0.5rem', fontSize: '2.5rem' }}>Gopinath Chidambaram</h2>
         <div className="founder-role" style={{ marginBottom: '1.5rem', color: 'var(--orange-500)', fontSize: '1.1rem', fontWeight: '500' }}>
