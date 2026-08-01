@@ -690,7 +690,7 @@ footer{background:var(--navy-950);padding:80px 0 30px;color:var(--white);}
 .footer-brand .logo{width:36px;}
 .footer-brand span{font-family:var(--font-display);font-weight:800;font-size:19px;}
 footer .tagline{color:var(--orange-400);font-family:var(--font-display);font-weight:600;font-size:14.5px;}
-footer .subtagline{color:#7C8BAF;font-size:13px;margin-top:6px;}
+footer .subtagline{color:var(--orange-400);font-size:13px;margin-top:6px;}
 .footer-col h5{font-family:var(--font-utility);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#7C8BAF;margin-bottom:18px;}
 .footer-col a{display:block;color:#B4C0DC;font-size:13.5px;padding:6px 0;transition:.3s;}
 .footer-col a:hover{color:var(--orange-400);transform:translateX(4px);}
