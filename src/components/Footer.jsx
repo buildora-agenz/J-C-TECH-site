@@ -10,10 +10,11 @@ const Footer = () => {
 
         <div className="subtagline">Learn from Real Industry Experience</div>
         <p style={{ marginTop: '1.5rem', color: '#93a2c4', fontSize: '0.9rem', lineHeight: '1.6' }}>
-          <strong>JC TECH</strong><br/>
-          Plot No. 87, AMUDHAM COLONY<br/>
-          NANDIVARAM-GUDUVANCHERY -603202<br/>
-          CHENGALPET DIST
+          <strong>JC Tech</strong><br/>
+          Plot NO. 87, AMUDHAM COLONY<br/>
+          NANDIVARAM-GUDUVANCHERY ,<br/>
+          CHENGALPET DIST ,<br/>
+          TAMILNADU , INDIA -603202
         </p>
       </div>
       <div className="footer-col">
